@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "aHmxSm/IW6gLrPvtnAIAbnw6yIxvBOob4io1DJnUM/zKDhWJ7YwsVAOX7PNALW45bcfkikaE/sW0WTYqtt11NQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\GrpcExtention\\GrpcExtention.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\WebDeveloper\\.nuget\\packages\\grpc.core.api\\2.39.1\\grpc.core.api.2.39.1.nupkg.sha512",
+    "C:\\Users\\WebDeveloper\\.nuget\\packages\\grpc.net.client\\2.39.0\\grpc.net.client.2.39.0.nupkg.sha512",
+    "C:\\Users\\WebDeveloper\\.nuget\\packages\\grpc.net.common\\2.39.0\\grpc.net.common.2.39.0.nupkg.sha512",
+    "C:\\Users\\WebDeveloper\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\WebDeveloper\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
