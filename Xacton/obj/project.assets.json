@@ -865,23 +865,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WebDeveloper\\.nuget\\packages\\": {},
+    "C:\\Users\\Kalinus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\Xacton\\Xacton.csproj",
+      "projectUniqueName": "C:\\Users\\Kalinus\\Desktop\\github\\KestrelWithDockerCompose\\Xacton\\Xacton.csproj",
       "projectName": "Xacton",
-      "projectPath": "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\Xacton\\Xacton.csproj",
-      "packagesPath": "C:\\Users\\WebDeveloper\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\Xacton\\obj\\",
+      "projectPath": "C:\\Users\\Kalinus\\Desktop\\github\\KestrelWithDockerCompose\\Xacton\\Xacton.csproj",
+      "packagesPath": "C:\\Users\\Kalinus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kalinus\\Desktop\\github\\KestrelWithDockerCompose\\Xacton\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\WebDeveloper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kalinus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -889,7 +889,6 @@
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\FastReports\\FastReport.Net Trial\\Nugets\\Windows": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -897,8 +896,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\GrpcExtention\\GrpcExtention.csproj": {
-              "projectPath": "C:\\Users\\WebDeveloper\\source\\repos\\Xacton\\GrpcExtention\\GrpcExtention.csproj"
+            "C:\\Users\\Kalinus\\Desktop\\github\\KestrelWithDockerCompose\\GrpcExtention\\GrpcExtention.csproj": {
+              "projectPath": "C:\\Users\\Kalinus\\Desktop\\github\\KestrelWithDockerCompose\\GrpcExtention\\GrpcExtention.csproj"
             }
           }
         }
@@ -940,7 +939,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

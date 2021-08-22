@@ -15,7 +15,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="..\Yakhyo\yakhyo.proto" GrpcServices="Client">
+      <Link>Protos\yakhyo.proto</Link>
+    </Protobuf>
     <Protobuf Include="Accemo.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GrpcExtention\GrpcExtention.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,2 @@
+obj\Debug\net5.0/Yakhyo.cs \
+obj\Debug\net5.0/YakhyoGrpc.cs: ../Yakhyo/yakhyo.proto

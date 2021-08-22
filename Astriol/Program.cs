@@ -1,12 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace Astriol
 {
@@ -21,15 +16,15 @@ namespace Astriol
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseKestrel(option =>
+                    webBuilder.ConfigureKestrel(option =>
                     {
-                        option.Listen(IPAddress.Any, 6000, listenOption =>
+                        option.Listen(IPAddress.Parse("127.0.0.1"), 8000, listenOption =>
                         {
-                            listenOption.Protocols = Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http2;
+                            listenOption.Protocols = HttpProtocols.Http2;
                         });
-                        option.Listen(IPAddress.Any, 6001, listenOption =>
+                        option.Listen(IPAddress.Parse("127.0.0.1"), 8001, listenOption =>
                          {
-                             listenOption.Protocols = Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http1AndHttp2;
+                             listenOption.Protocols = HttpProtocols.Http1AndHttp2;
                          });
                     });
                     webBuilder.UseStartup<Startup>();

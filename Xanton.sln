@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xacton", "Xacton\Xacton.csproj", "{1B310E66-ACEF-4565-AED3-49EA9C1B441A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xacton", "Xacton\Xacton.csproj", "{1B310E66-ACEF-4565-AED3-49EA9C1B441A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astriol", "Astriol\Astriol.csproj", "{00FA7748-3720-4C52-97CD-A2326A2C4C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astriol", "Astriol\Astriol.csproj", "{00FA7748-3720-4C52-97CD-A2326A2C4C18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accemo", "Accemo\Accemo.csproj", "{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accemo", "Accemo\Accemo.csproj", "{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExtention", "GrpcExtention\GrpcExtention.csproj", "{9C722A3A-D164-4315-981B-8943F99463BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcExtention", "GrpcExtention\GrpcExtention.csproj", "{9C722A3A-D164-4315-981B-8943F99463BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yakhyo", "Yakhyo\Yakhyo.csproj", "{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9C722A3A-D164-4315-981B-8943F99463BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C722A3A-D164-4315-981B-8943F99463BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C722A3A-D164-4315-981B-8943F99463BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

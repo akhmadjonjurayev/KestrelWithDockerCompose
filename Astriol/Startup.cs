@@ -1,3 +1,4 @@
+using Astriol.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,11 @@ namespace Astriol
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddGrpc(option =>
+            {
+                option.MaxReceiveMessageSize = 2000 * 1024 * 1024;
+                option.MaxSendMessageSize = 2000 * 1024 * 1024;
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -52,6 +57,7 @@ namespace Astriol
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapGrpcService<AstriolGrpcBaseSerice>();
                 endpoints.MapControllers();
             });
         }
