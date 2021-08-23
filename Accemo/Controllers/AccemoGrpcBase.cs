@@ -20,7 +20,7 @@ namespace Accemo.Controllers
 
         public async Task<string> GetFromYakhyo(string message)
         {
-            var GRPCConnection = await GrpcCallerService.CallService("http://localhost:6000", async channel =>
+            var GRPCConnection = await GrpcCallerService.CallService("http://yakhyo:6000", async channel =>
              {
                  var client = new YakhyoServiceGrpc.YakhyoServiceGrpcClient(channel);
                  var result = await client.SayHelloAsync(new YakhyoGrpc.HelloRequest() { Name = message });

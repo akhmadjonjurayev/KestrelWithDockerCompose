@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  accemo:
+    image: ${DOCKER_REGISTRY-}accemo
+    ports:
+      - 4001:4001 
+    #networks:
+    #  - back
+    build:
+      context: .
+      dockerfile: Accemo/Dockerfile
+
+  xacton:
+    image: ${DOCKER_REGISTRY-}xacton
+    #networks:
+    #  - back
+    ports:
+      - 7001:7001 
+    build:
+      context: .
+      dockerfile: Xacton/Dockerfile
+
+  yakhyo:
+    image: ${DOCKER_REGISTRY-}yakhyo
+    ports:
+      - 6001:6001 
+    #networks:
+    #  - back
+    build:
+      context: .
+      dockerfile: Yakhyo/Dockerfile
+#networks:
+#  back:
+#    driver: bridge

@@ -1,0 +1,38 @@
+networks:
+  back:
+    driver: custom-driver-1
+services:
+  accemo:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Accemo/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: accemo
+    networks:
+      back: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\WebDeveloper\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\WebDeveloper\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  xacton:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Xacton/Dockerfile
+    image: xacton
+    networks:
+      back: {}
+    ports:
+    - published: 7001
+      target: 7001
+  yakhyo:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Yakhyo/Dockerfile
+    image: yakhyo
+    networks:
+      back: {}
+version: '3.4'

@@ -20,7 +20,7 @@ namespace Xacton
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://+:7000");
+                    webBuilder.UseUrls("http://+:7001");
                     webBuilder.UseStartup<Startup>();
                 });
     }

@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xacton", "Xacton\Xacton.csproj", "{1B310E66-ACEF-4565-AED3-49EA9C1B441A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astriol", "Astriol\Astriol.csproj", "{00FA7748-3720-4C52-97CD-A2326A2C4C18}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accemo", "Accemo\Accemo.csproj", "{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcExtention", "GrpcExtention\GrpcExtention.csproj", "{9C722A3A-D164-4315-981B-8943F99463BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yakhyo", "Yakhyo\Yakhyo.csproj", "{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yakhyo", "Yakhyo\Yakhyo.csproj", "{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1D815943-51E8-4D96-AE08-71597A221031}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{1B310E66-ACEF-4565-AED3-49EA9C1B441A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B310E66-ACEF-4565-AED3-49EA9C1B441A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B310E66-ACEF-4565-AED3-49EA9C1B441A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00FA7748-3720-4C52-97CD-A2326A2C4C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00FA7748-3720-4C52-97CD-A2326A2C4C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00FA7748-3720-4C52-97CD-A2326A2C4C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00FA7748-3720-4C52-97CD-A2326A2C4C18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7FC8D2F-07B3-4074-A480-97AF5B2FD423}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E74409D-D1EE-4BD9-B5BD-8E0BF580E45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D815943-51E8-4D96-AE08-71597A221031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D815943-51E8-4D96-AE08-71597A221031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D815943-51E8-4D96-AE08-71597A221031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D815943-51E8-4D96-AE08-71597A221031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
