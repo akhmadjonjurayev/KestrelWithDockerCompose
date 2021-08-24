@@ -18,16 +18,15 @@ namespace Accemo
                 {
                     webBuilder.ConfigureKestrel(options =>
                     {
-                        options.Listen(IPAddress.Parse("127.0.0.1"), 4001, listenOptions =>
-                        {
-                            listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
-                        });
-
-                        options.Listen(IPAddress.Parse("127.0.0.1"), 4000, listenOptions =>
+                        options.Listen(IPAddress.Any, 4000, listenOptions =>
                         {
                             listenOptions.Protocols = HttpProtocols.Http2;
                         });
 
+                        options.Listen(IPAddress.Any, 4001, listenOptions =>
+                        {
+                            listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+                        });
                     });
                     webBuilder.UseStartup<Startup>();
                 });

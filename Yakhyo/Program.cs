@@ -23,11 +23,11 @@ namespace Yakhyo
                 {
                     webBuilder.ConfigureKestrel(option =>
                     {
-                        option.Listen(IPAddress.Parse("127.0.0.1"), 6000, listenOption =>
+                        option.Listen(IPAddress.Any, 6000, listenOption =>
                         {
                             listenOption.Protocols = Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http2;
                         });
-                        option.Listen(IPAddress.Parse("127.0.0.1"), 6001, listenOption =>
+                        option.Listen(IPAddress.Any, 6001, listenOption =>
                           {
                               listenOption.Protocols = Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http1AndHttp2;
                           });
