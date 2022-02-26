@@ -25,15 +25,15 @@ namespace Xacton.Controllers
         //    return GRPCConnection;
         //}
         [HttpGet]
-        public async Task<string> GetGrpc([FromQuery]string value = "Akhmadjon")
+        public async Task<IActionResult> GetGrpc([FromQuery] string value = "Akhmadjon")
         {
-            var GRPCConnection = await GrpcCallerService.CallService("http://localhost:4000", async channel =>
+            var GRPCConnection = await GrpcCallerService.CallService("http://accemo:4000", async channel =>
              {
                  var client = new AccemoServieGrpc.AccemoServieGrpcClient(channel);
                  var result = await client.SayHelloAsync(new Accemo.GrpcService.HelloRequest() { Name = $"Salom {value}" });
                  return result.Message;
              });
-            return GRPCConnection;
+            return Ok(new { IsSuccess = true, Message = "All Done !", Data = GRPCConnection });
         }
     }
 }

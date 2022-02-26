@@ -1,0 +1,34 @@
+services:
+  accemo:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Accemo/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: accemo
+    ports:
+    - target: 80
+    - target: 443
+    - published: 4001
+      target: 4001
+    volumes:
+    - C:\Users\WebDeveloper\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\WebDeveloper\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  xacton:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Xacton/Dockerfile
+    image: xacton
+    ports:
+    - published: 7001
+      target: 7001
+  yakhyo:
+    build:
+      context: C:\Users\WebDeveloper\source\repos\Xacton
+      dockerfile: Yakhyo/Dockerfile
+    image: yakhyo
+    ports:
+    - published: 6001
+      target: 6001
+version: '3.4'
